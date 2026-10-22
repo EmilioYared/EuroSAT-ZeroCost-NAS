@@ -1,25 +1,15 @@
 # datasets (download separately, see README)
 data/
-*.tar.gz
 
-# trained weights are published as a release asset
-checkpoints/*
-!checkpoints/README.md
+# trained weights
 *.pth
 *.pt
 
 # Python / Jupyter
 __pycache__/
 .ipynb_checkpoints/
-*.pyc
-.venv/
-
-# Node (slide generators)
-node_modules/
 
 # OS / editors
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
 ~$*

@@ -6,11 +6,10 @@
 
 Master 2 Artificial Intelligence and Data Engineering · AIDE500 Programming for AI
 
-[Technical report](docs/aide500/AIDE500_Report.pdf) ·
-[Slides](docs/aide500/AIDE500_Presentation.pdf) ·
-[Scientific English report](docs/english/Scientific_Report.pdf) ·
-[Notebooks](notebooks/) ·
-[Checkpoints](../../releases)
+[Technical report](report/AIDE500_Report.pdf) ·
+[Slides](presentation/AIDE500_Presentation.pdf) ·
+[Scientific English report](report/Scientific_English_Report.pdf) ·
+[Notebooks](notebooks/)
 
 </div>
 
@@ -83,44 +82,25 @@ One forward pass is enough: about 0.1 s per architecture, so 1,000 EuroSAT candi
 │   ├── NB6_1_NASBench201_Reproduction     NASWOT reproduction + SynFlow, SNIP, grad-norm
 │   ├── NB6_2_EuroSAT_ZeroCost_NAS         search over 8,640 CNNs on EuroSAT
 │   └── NB7_Final_Evaluation               all 50 models on the same test set
-├── results/                   # JSON/CSV results written by each notebook
-├── docs/
-│   ├── aide500/               # technical report (IEEE format), slides, reproduction note
-│   └── english/               # scientific-English report, presentation and speaking script
-├── source/                    # Typst sources, figure and slide generators for both reports
-├── scripts/                   # kaggle_run.py + Kaggle kernel metadata
-├── assets/                    # figures used in this README
-└── checkpoints/               # trained weights (download from Releases)
+├── report/                    # AIDE500 technical report (IEEE) · Scientific English report (APA)
+├── presentation/              # AIDE500 slides (PDF, PPTX) · Scientific English slides (PPTX, animated)
+└── assets/                    # figures used in this README
 ```
 
 ## Reproducing
 
-All experiments ran on a Kaggle **T4 GPU** with PyTorch.
+All experiments ran on a Kaggle **T4 GPU** with PyTorch, torchvision, NumPy, pandas, SciPy, scikit-learn and Matplotlib.
 
-```bash
-pip install -r requirements.txt
-```
-
-1. **Data.** Download [EuroSAT RGB](https://www.kaggle.com/datasets/waseemalastal/eurosat-rgb-dataset) into `data/EuroSAT_RGB/`.
+1. Download [EuroSAT RGB](https://www.kaggle.com/datasets/waseemalastal/eurosat-rgb-dataset) (on Kaggle, add it as an input dataset).
+2. Run the notebooks in order, NB0 → NB7. Each one saves its results and checkpoints for the next ones.
    NB6_1 additionally needs CIFAR-10 and the NAS-Bench-201 accuracy table produced by NB6_0.
-2. **Notebooks.** Run them in order, NB0 → NB7, locally or on Kaggle.
-   `scripts/kaggle_run.py` pushes a notebook to Kaggle, runs it on a GPU and downloads the executed notebook and its outputs
-   (each notebook in its own folder next to its `kernel-metadata.json`, from `scripts/kaggle_metadata/`).
-3. **Checkpoints.** The 50 trained models (≈ 730 MB) are attached to the
-   [latest release](../../releases) as `checkpoints.zip`; unzip it into `checkpoints/`.
-4. **Reports.** Both reports are written in [Typst](https://typst.app):
-   ```bash
-   cd source/aide500_report && typst compile --root ../.. --font-path fonts Report.typ
-   cd source/english_report && typst compile --root ../.. Report.typ
-   ```
 
-## Two deliverables, one study
+## Deliverables
 
 | | AIDE500 — Programming for AI | Scientific English for AI |
 |---|---|---|
-| Report | [IEEE-style technical report](docs/aide500/AIDE500_Report.pdf) | [Professional report, APA](docs/english/Scientific_Report.pdf) |
-| Slides | [PDF](docs/aide500/AIDE500_Presentation.pdf) · [PPTX](docs/aide500/AIDE500_Presentation.pptx) | [PPTX with animated figures](docs/english/Presentation.pptx) · [script](docs/english/Presentation_Script.txt) |
-| Extra | [NASWOT reproduction vs. paper](docs/aide500/NASWOT_Reproduction_Comparison.pdf) | Five-strategy NAS comparison (`source/english_report/experiments/`) |
+| Report | [IEEE-style technical report](report/AIDE500_Report.pdf) | [Professional report, APA](report/Scientific_English_Report.pdf) |
+| Slides | [PDF](presentation/AIDE500_Presentation.pdf) · [PPTX](presentation/AIDE500_Presentation.pptx) | [PPTX with animated figures](presentation/Scientific_English_Presentation.pptx) |
 
 ## Authors
 
