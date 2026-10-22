@@ -1,0 +1,14 @@
+{
+  "id": "emilioyared/aide500-nb4-data-augmentation",
+  "title": "AIDE500 NB4 Data Augmentation",
+  "code_file": "NB4_Data_Augmentation.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["waseemalastal/eurosat-rgb-dataset"],
+  "competition_sources": [],
+  "kernel_sources": ["@NB0_Setup_Data", "@NB2_Architecture_Variations", "@NB3_Optimizers_LR_Schedulers"],
+  "cell_timeout": 5400
+}

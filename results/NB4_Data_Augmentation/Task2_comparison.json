@@ -1,0 +1,250 @@
+[
+  {
+    "notebook": "NB2",
+    "run": "baseline",
+    "params": 2193226,
+    "latency_ms": 0.3803062438964844,
+    "best_val_acc": 91.11111111111111,
+    "gen_gap": 8.86772486772486
+  },
+  {
+    "notebook": "NB2",
+    "run": "depth_2blocks",
+    "params": 4216522,
+    "latency_ms": 0.3019547462463379,
+    "best_val_acc": 86.74074074074073,
+    "gen_gap": 13.211640211640216
+  },
+  {
+    "notebook": "NB2",
+    "run": "depth_4blocks",
+    "params": 1439818,
+    "latency_ms": 0.47141551971435547,
+    "best_val_acc": 92.37037037037037,
+    "gen_gap": 7.32275132275133
+  },
+  {
+    "notebook": "NB2",
+    "run": "depth_5blocks",
+    "params": 1243466,
+    "latency_ms": 0.6354260444641113,
+    "best_val_acc": 93.03703703703704,
+    "gen_gap": 6.169312169312164
+  },
+  {
+    "notebook": "NB2",
+    "run": "fc_1layers",
+    "params": 175178,
+    "latency_ms": 0.3377079963684082,
+    "best_val_acc": 90.74074074074075,
+    "gen_gap": 9.206349206349202
+  },
+  {
+    "notebook": "NB2",
+    "run": "fc_3layers",
+    "params": 2224842,
+    "latency_ms": 0.43819665908813477,
+    "best_val_acc": 91.11111111111111,
+    "gen_gap": 8.793650793650784
+  },
+  {
+    "notebook": "NB2",
+    "run": "kernel_5x5",
+    "params": 2358602,
+    "latency_ms": 0.5353140830993652,
+    "best_val_acc": 89.1604938271605,
+    "gen_gap": 10.807760141093468
+  },
+  {
+    "notebook": "NB2",
+    "run": "kernel_7x7",
+    "params": 2606666,
+    "latency_ms": 0.7709670066833496,
+    "best_val_acc": 79.95061728395062,
+    "gen_gap": 15.869488536155202
+  },
+  {
+    "notebook": "NB2",
+    "run": "padding_valid",
+    "params": 1275722,
+    "latency_ms": 0.3912830352783203,
+    "best_val_acc": 89.20987654320987,
+    "gen_gap": 10.514991181657848
+  },
+  {
+    "notebook": "NB2",
+    "run": "downsample_stride",
+    "params": 2193226,
+    "latency_ms": 0.3205561637878418,
+    "best_val_acc": 84.37037037037037,
+    "gen_gap": 15.433862433862444
+  },
+  {
+    "notebook": "NB2",
+    "run": "batchnorm",
+    "params": 2193450,
+    "latency_ms": 0.5225419998168945,
+    "best_val_acc": 91.90123456790124,
+    "gen_gap": 7.675485008818342
+  },
+  {
+    "notebook": "NB2",
+    "run": "combined",
+    "params": 1244202,
+    "latency_ms": 0.7348465919494629,
+    "best_val_acc": 94.51851851851852,
+    "gen_gap": 4.888888888888886
+  },
+  {
+    "notebook": "NB3",
+    "run": "SGD_lr0.01",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 93.28395061728395,
+    "gen_gap": 5.488536155202823
+  },
+  {
+    "notebook": "NB3",
+    "run": "SGD_lr0.001",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 93.30864197530863,
+    "gen_gap": 6.093474426807774
+  },
+  {
+    "notebook": "NB3",
+    "run": "SGD_lr0.0001",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 90.51851851851852,
+    "gen_gap": 2.285714285714292
+  },
+  {
+    "notebook": "NB3",
+    "run": "Adam_lr0.01",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 93.03703703703704,
+    "gen_gap": 3.5132275132275055
+  },
+  {
+    "notebook": "NB3",
+    "run": "Adam_lr0.001",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 94.14814814814815,
+    "gen_gap": 2.470899470899468
+  },
+  {
+    "notebook": "NB3",
+    "run": "Adam_lr0.0001",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 92.32098765432099,
+    "gen_gap": 6.91181657848324
+  },
+  {
+    "notebook": "NB3",
+    "run": "AdamW_lr0.01",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 92.12345679012346,
+    "gen_gap": 3.0828924162257465
+  },
+  {
+    "notebook": "NB3",
+    "run": "AdamW_lr0.001",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 94.0,
+    "gen_gap": 4.148148148148152
+  },
+  {
+    "notebook": "NB3",
+    "run": "AdamW_lr0.0001",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 92.69135802469137,
+    "gen_gap": 5.8218694885361515
+  },
+  {
+    "notebook": "NB3",
+    "run": "Adam_lr0.001_StepLR",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 95.85185185185185,
+    "gen_gap": 3.3068783068783176
+  },
+  {
+    "notebook": "NB3",
+    "run": "Adam_lr0.001_Cosine",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 95.85185185185185,
+    "gen_gap": 3.9206349206349245
+  },
+  {
+    "notebook": "NB3",
+    "run": "Adam_lr0.001_OneCycle",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 95.53086419753086,
+    "gen_gap": 4.3950617283950635
+  },
+  {
+    "notebook": "NB4",
+    "run": "none",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 95.85185185185185,
+    "gen_gap": 3.9012345679012412
+  },
+  {
+    "notebook": "NB4",
+    "run": "flips",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 96.29629629629629,
+    "gen_gap": 1.8518518518518619
+  },
+  {
+    "notebook": "NB4",
+    "run": "flips_crop",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 96.44444444444444,
+    "gen_gap": 1.4320987654321016
+  },
+  {
+    "notebook": "NB4",
+    "run": "flips_crop_affine",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 96.09876543209876,
+    "gen_gap": 0.9629629629629761
+  },
+  {
+    "notebook": "NB4",
+    "run": "flips_crop_affine_jitter",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 95.65432098765432,
+    "gen_gap": 0.9876543209876587
+  },
+  {
+    "notebook": "NB4",
+    "run": "flips_crop_mixup",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 96.51851851851852,
+    "gen_gap": 1.209876543209873
+  },
+  {
+    "notebook": "NB4",
+    "run": "flips_crop_cutmix",
+    "params": 1244202,
+    "latency_ms": 0.6936383247375488,
+    "best_val_acc": 95.18518518518519,
+    "gen_gap": 0.9135802469135683
+  }
+]

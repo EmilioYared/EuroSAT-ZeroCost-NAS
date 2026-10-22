@@ -1,0 +1,10 @@
+{
+  "run": "NB1_baseline_sgd_lr0.01_bs64_30ep",
+  "params": 2193226,
+  "latency_ms": 0.3439974784851074,
+  "best_val_acc": 89.50617283950618,
+  "best_epoch": 27,
+  "gen_gap": 10.456790123456784,
+  "test_acc": 90.14814814814814,
+  "train_time_s": 346.3304328918457
+}

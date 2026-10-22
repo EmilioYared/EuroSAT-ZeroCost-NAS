@@ -1,0 +1,14 @@
+{
+  "id": "emilioyared/aide500-nb3-optimizers-lr-schedulers",
+  "title": "AIDE500 NB3 Optimizers LR Schedulers",
+  "code_file": "NB3_Optimizers_LR_Schedulers.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["waseemalastal/eurosat-rgb-dataset"],
+  "competition_sources": [],
+  "kernel_sources": ["@NB0_Setup_Data", "@NB2_Architecture_Variations"],
+  "cell_timeout": 5400
+}

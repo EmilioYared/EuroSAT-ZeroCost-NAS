@@ -1,0 +1,18 @@
+{
+  "id": "emilioyared/aide500-nb1-baseline-cnn",
+  "title": "AIDE500 NB1 Baseline CNN",
+  "code_file": "NB1_Baseline_CNN.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "waseemalastal/eurosat-rgb-dataset"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "@NB0_Setup_Data"
+  ],
+  "cell_timeout": 1800
+}

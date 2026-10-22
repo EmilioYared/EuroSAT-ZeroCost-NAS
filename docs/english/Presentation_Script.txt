@@ -1,0 +1,266 @@
+==================================================================
+ PRESENTATION SCRIPT — 7 MINUTES
+ Designing CNNs for Satellite Image Classification
+ Hand-Design, Transfer Learning and Training-Free Search
+==================================================================
+
+TIMING OVERVIEW (total = 7:00)
+------------------------------------------------------------------
+ Slide 1  Title ............................ 0:25   (0:00 – 0:25)
+ Slide 2  Outline .......................... 0:30   (0:25 – 0:55)
+ Slide 3  Objective ........................ 0:45   (0:55 – 1:40)
+ Slide 4  Method: Data and Approaches ...... 0:50   (1:40 – 2:30)
+ Slide 5  Method: Judging Without Training . 0:55   (2:30 – 3:25)
+ Slide 6  Results: Hand-Design, Transfer ... 0:40   (3:25 – 4:05)
+ Slide 7  Results: Five Search Strategies .. 0:55   (4:05 – 5:00)
+ Slide 8  Results: Search on EuroSAT ....... 0:40   (5:00 – 5:40)
+ Slide 9  Results: Final Comparison ........ 0:35   (5:40 – 6:15)
+ Slide 10 Conclusion ....................... 0:30   (6:15 – 6:45)
+ Slide 11 Thank You / Questions ............ 0:15   (6:45 – 7:00)
+
+Speaking pace: about 130 words per minute (slow and clear).
+Each slide appears complete as soon as you press the arrow key
+(no build-up and no transition). Press it once per slide.
+Slides 4, 5 and 7 contain moving pictures (GIFs) that loop on
+their own while you speak; you do not need to click them.
+Short pauses are marked with  ( / ).
+
+
+------------------------------------------------------------------
+ SLIDE 1 — TITLE                                     [0:25]
+------------------------------------------------------------------
+WHAT TO DO: Smile, face the audience, and wait two seconds before
+you start. Do not read from the slide.
+
+SAY:
+"Good morning, everyone. My name is Emilio Yared, and I am a
+Master 2 student in Artificial Intelligence and Data Engineering.
+Today, I will present my project on the design of neural networks
+that classify satellite images. ( / ) In particular, I will show
+how this design can be automated, almost without any training."
+
+
+------------------------------------------------------------------
+ SLIDE 2 — OUTLINE                                   [0:30]
+------------------------------------------------------------------
+WHAT TO DO: Follow the arrows with your hand from left to right.
+
+SAY:
+"This diagram shows the plan of my talk. ( / ) First, I will
+introduce the objective of the project. Then, I will present the
+data and the three approaches that were compared: hand-design,
+transfer learning, and training-free search. After that, I will
+present the results of each approach, and I will compare all the
+models together. Finally, I will conclude, and I will be happy to
+answer your questions."
+
+
+------------------------------------------------------------------
+ SLIDE 3 — OBJECTIVE                                 [0:45]
+------------------------------------------------------------------
+WHAT TO DO: Point to the two numbers on the left, then to the
+objective on the right.
+
+SAY:
+"Let us start with the context. This project uses the EuroSAT
+dataset: twenty-seven thousand satellite images, divided into ten
+land-use classes, such as forest, river, or highway.
+( / ) Designing a good network for such data is expensive. For
+example, the first automatic search method used eight hundred
+GPUs for twenty-eight days.
+The problem is that every new idea requires a complete training
+run, which takes time and energy.
+( / ) Therefore, the objective of this project was to compare
+three ways of building a classifier: first, designing a network
+by hand; second, reusing a network pretrained on ImageNet; and
+third, searching the architecture automatically, without
+training."
+
+
+------------------------------------------------------------------
+ SLIDE 4 — METHOD: DATA AND THREE APPROACHES         [0:50]
+------------------------------------------------------------------
+WHAT TO DO: Point to the moving images first (each tile changes
+to another example of its class), then to each card in turn.
+
+SAY:
+"Now, let us move to the method. Here, you can see examples of
+the ten classes; the images change to show the variety inside
+each class. All the models used exactly the same split of the
+data, so the comparison is fair.
+( / ) In the first approach, a simple network was improved one
+factor at a time: its depth, its kernels, its optimiser, and its
+data augmentation.
+In the second approach, a ResNet-18 pretrained on ImageNet was
+fine-tuned with five to one hundred percent of the data.
+In the third approach, an algorithm called NASWOT scored one
+thousand untrained networks in a few seconds, and only the best
+one was trained."
+
+
+------------------------------------------------------------------
+ SLIDE 5 — METHOD: JUDGING A NETWORK WITHOUT TRAINING [0:55]
+------------------------------------------------------------------
+WHAT TO DO: Slow down here — this is your main idea. Point to
+each numbered step, then to the animation on the right: it shows
+the images, their binary codes and the kernel being filled in.
+
+SAY:
+"The key question is: how can we judge a network without training
+it? The method works in three steps.
+First, we take an untrained network and pass one batch of images
+through it.
+Second, we record which units of the network are active for each
+image. This gives a binary code for every image, as shown in the
+animation.
+Third, we compare these codes. ( / ) If the codes are different,
+the network can already separate the images, and it usually
+trains well.
+The kernel on the right counts how similar each pair of codes is,
+and the score summarises it in a single number.
+( / ) Before using this score, I validated it on NAS-Bench-201, a
+benchmark of fifteen thousand networks whose accuracy is already
+known."
+
+
+------------------------------------------------------------------
+ SLIDE 6 — RESULTS: HAND-DESIGN AND TRANSFER LEARNING [0:40]
+------------------------------------------------------------------
+WHAT TO DO: Point to the red line on the chart, then to each
+number on the right.
+
+SAY:
+"Let us now look at the results, starting with the first two
+approaches.
+The step-by-step study improved the hand-designed network from
+ninety point two to ninety-seven percent.
+However, the fine-tuned ResNet-18 obtained the highest accuracy:
+ninety-nine percent.
+( / ) Moreover, as shown by the red line on the chart, it still
+reached ninety-six percent with only five percent of the data,
+that is, fewer than one thousand images. In other words,
+pretraining is extremely useful when labelled data is limited."
+
+
+------------------------------------------------------------------
+ SLIDE 7 — RESULTS: NASWOT VERSUS FIVE SEARCH STRATEGIES [0:55]
+------------------------------------------------------------------
+WHAT TO DO: Explain the axes first; the curves draw themselves
+again and again. Then go through the points on the right.
+
+SAY:
+"Next, this chart compares NASWOT with five other search
+strategies on the benchmark. The horizontal axis shows how many
+networks were trained, and the vertical axis shows the accuracy
+of the best network found. Each curve is the average of two
+hundred runs.
+( / ) First, the published results of NASWOT were reproduced
+within zero point one point.
+Second, without any training, NASWOT reached ninety-two point
+nine percent, which is as good as training ten random networks.
+Evolution with one hundred trained networks was better, at
+ninety-four point one percent, but it was far more expensive.
+( / ) Interestingly, the best strategy with a small budget was the
+combination of both: NASWOT chooses the starting population, and
+evolution improves it."
+
+
+------------------------------------------------------------------
+ SLIDE 8 — RESULTS: AUTOMATIC SEARCH ON EUROSAT      [0:40]
+------------------------------------------------------------------
+WHAT TO DO: Point to the two highlighted rows of the table, then
+to the two cards.
+
+SAY:
+"After this validation, I applied the search to EuroSAT. One
+thousand networks were scored in about two and a half minutes,
+and only the top three were trained.
+The table compares my hand-designed network with the network
+found by NASWOT. ( / ) The searched network was zero point seven
+points more accurate, and it required twelve times less GPU time
+to design: seventeen minutes instead of more than three hours.
+Furthermore, the search rediscovered the conclusions of my manual
+study, and it added residual connections, which I had not
+tested."
+
+
+------------------------------------------------------------------
+ SLIDE 9 — RESULTS: NO SINGLE BEST MODEL             [0:35]
+------------------------------------------------------------------
+WHAT TO DO: Point to the top right of the chart (ResNet-18), then
+to the bottom left (fast networks), then to the table.
+
+SAY:
+"Finally, all fifty trained models were tested on the same four
+thousand and fifty images. This chart shows accuracy against
+speed.
+As shown in the table, no single model is the best on every
+criterion. ( / ) The ResNet-18 is the most accurate, but it is
+nine times larger than my hand-designed network.
+On the other hand, the networks trained from scratch are the
+fastest. Consequently, the best choice depends on the hardware
+that is available."
+
+
+------------------------------------------------------------------
+ SLIDE 10 — CONCLUSION                               [0:30]
+------------------------------------------------------------------
+WHAT TO DO: Point to each card as you say "first", "second",
+and "finally".
+
+SAY:
+"To conclude, this project demonstrated three points.
+First, transfer learning gives the highest accuracy and works
+even with very little data.
+Second, training-free search found a better network than my
+manual design, with twelve times less GPU time.
+Finally, NASWOT is a fast filter, not a replacement for training.
+In future work, the experiments should be repeated with several
+random seeds."
+
+
+------------------------------------------------------------------
+ SLIDE 11 — THANK YOU / QUESTIONS                    [0:15]
+------------------------------------------------------------------
+WHAT TO DO: Stop, smile, look at the audience, and wait.
+
+SAY:
+"This brings me to the end of my presentation. Thank you very
+much for your attention. I would be happy to answer any
+questions."
+
+
+==================================================================
+ HANDLING QUESTIONS (from Chapter 4)
+==================================================================
+- Repeat the question first: "So the question is whether..."
+  This gives you time to think.
+- If you are not sure: "That is a good question. I will look
+  into that."
+- Stay polite and calm, and keep your answers short.
+
+POSSIBLE QUESTIONS AND SHORT ANSWERS
+------------------------------------------------------------------
+Q: What is neural architecture search?
+A: "It is a method that designs the structure of a neural network
+   automatically, instead of an engineer designing it by hand."
+
+Q: Why does the score work without training?
+A: "If an untrained network already gives different codes to
+   different images, it can separate them easily. Such networks
+   usually learn well during training."
+
+Q: Why not always use ResNet-18, since it is the most accurate?
+A: "Because it is nine times larger and slower. On limited
+   hardware, for example on board a satellite, a smaller network
+   can be the better choice."
+
+Q: What is NAS-Bench-201?
+A: "It is a public benchmark of fifteen thousand six hundred
+   networks that have all been trained in advance. It allows us
+   to compare search methods without training any network."
+
+Q: Are your results reliable?
+A: "The benchmark comparison was repeated two hundred times.
+   However, the manual study used a single run per
+   configuration, so only large differences are conclusive."

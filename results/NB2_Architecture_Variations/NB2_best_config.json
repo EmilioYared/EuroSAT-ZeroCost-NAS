@@ -1,0 +1,12 @@
+{
+  "name": "combined",
+  "config": {
+    "n_blocks": 5,
+    "n_fc": 2,
+    "kernel_size": 3,
+    "padding": "same",
+    "downsample": "pool",
+    "use_bn": true
+  },
+  "test_acc": 95.35802469135803
+}

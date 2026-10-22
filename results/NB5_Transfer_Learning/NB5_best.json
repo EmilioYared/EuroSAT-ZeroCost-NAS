@@ -1,0 +1,8 @@
+{
+  "name": "full_100pct",
+  "method": "full",
+  "test_acc": 99.03703703703704,
+  "test_f1_macro": 98.98937305156572,
+  "params": 11181642,
+  "latency_ms": 2.5162553787231445
+}

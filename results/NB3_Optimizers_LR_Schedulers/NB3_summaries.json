@@ -1,0 +1,218 @@
+{
+  "arch": {
+    "n_blocks": 5,
+    "n_fc": 2,
+    "kernel_size": 3,
+    "padding": "same",
+    "downsample": "pool",
+    "use_bn": true
+  },
+  "summaries": {
+    "SGD_lr0.01": {
+      "name": "SGD_lr0.01",
+      "optimizer": "SGD",
+      "lr": 0.01,
+      "scheduler": "none",
+      "best_val_acc": 93.28395061728395,
+      "best_epoch": 24,
+      "final_val_acc": 93.1604938271605,
+      "gen_gap": 5.488536155202823,
+      "epochs_to_90": 10,
+      "train_time_s": 490.9456946849823
+    },
+    "SGD_lr0.001": {
+      "name": "SGD_lr0.001",
+      "optimizer": "SGD",
+      "lr": 0.001,
+      "scheduler": "none",
+      "best_val_acc": 93.30864197530863,
+      "best_epoch": 24,
+      "final_val_acc": 93.20987654320987,
+      "gen_gap": 6.093474426807774,
+      "epochs_to_90": 9,
+      "train_time_s": 346.7628207206726
+    },
+    "SGD_lr0.0001": {
+      "name": "SGD_lr0.0001",
+      "optimizer": "SGD",
+      "lr": 0.0001,
+      "scheduler": "none",
+      "best_val_acc": 90.51851851851852,
+      "best_epoch": 25,
+      "final_val_acc": 90.51851851851852,
+      "gen_gap": 2.285714285714292,
+      "epochs_to_90": 23,
+      "train_time_s": 348.70389890670776
+    },
+    "Adam_lr0.01": {
+      "name": "Adam_lr0.01",
+      "optimizer": "Adam",
+      "lr": 0.01,
+      "scheduler": "none",
+      "best_val_acc": 93.03703703703704,
+      "best_epoch": 24,
+      "final_val_acc": 91.60493827160494,
+      "gen_gap": 3.5132275132275055,
+      "epochs_to_90": 12,
+      "train_time_s": 326.2183554172516
+    },
+    "Adam_lr0.001": {
+      "name": "Adam_lr0.001",
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "none",
+      "best_val_acc": 94.14814814814815,
+      "best_epoch": 15,
+      "final_val_acc": 92.22222222222223,
+      "gen_gap": 2.470899470899468,
+      "epochs_to_90": 6,
+      "train_time_s": 341.1450629234314
+    },
+    "Adam_lr0.0001": {
+      "name": "Adam_lr0.0001",
+      "optimizer": "Adam",
+      "lr": 0.0001,
+      "scheduler": "none",
+      "best_val_acc": 92.32098765432099,
+      "best_epoch": 20,
+      "final_val_acc": 89.4074074074074,
+      "gen_gap": 6.91181657848324,
+      "epochs_to_90": 9,
+      "train_time_s": 366.8569972515106
+    },
+    "AdamW_lr0.01": {
+      "name": "AdamW_lr0.01",
+      "optimizer": "AdamW",
+      "lr": 0.01,
+      "scheduler": "none",
+      "best_val_acc": 92.12345679012346,
+      "best_epoch": 20,
+      "final_val_acc": 88.96296296296296,
+      "gen_gap": 3.0828924162257465,
+      "epochs_to_90": 10,
+      "train_time_s": 366.9349253177643
+    },
+    "AdamW_lr0.001": {
+      "name": "AdamW_lr0.001",
+      "optimizer": "AdamW",
+      "lr": 0.001,
+      "scheduler": "none",
+      "best_val_acc": 94.0,
+      "best_epoch": 25,
+      "final_val_acc": 94.0,
+      "gen_gap": 4.148148148148152,
+      "epochs_to_90": 11,
+      "train_time_s": 341.370924949646
+    },
+    "AdamW_lr0.0001": {
+      "name": "AdamW_lr0.0001",
+      "optimizer": "AdamW",
+      "lr": 0.0001,
+      "scheduler": "none",
+      "best_val_acc": 92.69135802469137,
+      "best_epoch": 19,
+      "final_val_acc": 92.32098765432099,
+      "gen_gap": 5.8218694885361515,
+      "epochs_to_90": 6,
+      "train_time_s": 332.6582417488098
+    },
+    "Adam_lr0.001_StepLR": {
+      "name": "Adam_lr0.001_StepLR",
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "StepLR",
+      "best_val_acc": 95.85185185185185,
+      "best_epoch": 21,
+      "final_val_acc": 95.60493827160494,
+      "gen_gap": 3.3068783068783176,
+      "epochs_to_90": 9,
+      "train_time_s": 334.85750341415405
+    },
+    "Adam_lr0.001_Cosine": {
+      "name": "Adam_lr0.001_Cosine",
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "Cosine",
+      "best_val_acc": 95.85185185185185,
+      "best_epoch": 24,
+      "final_val_acc": 95.85185185185185,
+      "gen_gap": 3.9206349206349245,
+      "epochs_to_90": 6,
+      "train_time_s": 343.8091380596161
+    },
+    "Adam_lr0.001_OneCycle": {
+      "name": "Adam_lr0.001_OneCycle",
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "OneCycle",
+      "best_val_acc": 95.53086419753086,
+      "best_epoch": 25,
+      "final_val_acc": 95.53086419753086,
+      "gen_gap": 4.3950617283950635,
+      "epochs_to_90": 8,
+      "train_time_s": 362.32253670692444
+    }
+  },
+  "recipes": {
+    "SGD_lr0.01": {
+      "optimizer": "SGD",
+      "lr": 0.01,
+      "scheduler": "none"
+    },
+    "SGD_lr0.001": {
+      "optimizer": "SGD",
+      "lr": 0.001,
+      "scheduler": "none"
+    },
+    "SGD_lr0.0001": {
+      "optimizer": "SGD",
+      "lr": 0.0001,
+      "scheduler": "none"
+    },
+    "Adam_lr0.01": {
+      "optimizer": "Adam",
+      "lr": 0.01,
+      "scheduler": "none"
+    },
+    "Adam_lr0.001": {
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "none"
+    },
+    "Adam_lr0.0001": {
+      "optimizer": "Adam",
+      "lr": 0.0001,
+      "scheduler": "none"
+    },
+    "AdamW_lr0.01": {
+      "optimizer": "AdamW",
+      "lr": 0.01,
+      "scheduler": "none"
+    },
+    "AdamW_lr0.001": {
+      "optimizer": "AdamW",
+      "lr": 0.001,
+      "scheduler": "none"
+    },
+    "AdamW_lr0.0001": {
+      "optimizer": "AdamW",
+      "lr": 0.0001,
+      "scheduler": "none"
+    },
+    "Adam_lr0.001_StepLR": {
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "StepLR"
+    },
+    "Adam_lr0.001_Cosine": {
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "Cosine"
+    },
+    "Adam_lr0.001_OneCycle": {
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "scheduler": "OneCycle"
+    }
+  }
+}

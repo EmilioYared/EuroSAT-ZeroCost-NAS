@@ -1,0 +1,1149 @@
+{
+  "study": [
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          7,
+          3
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k3773_w16_bn_pool_skip",
+      "short_val_acc": 89.25925925925927,
+      "train_time_s": 121.19737577438354,
+      "params": 738474,
+      "naswot": 1344.8834076035969,
+      "grad_norm": 13.826361052691936,
+      "snip": 47.65896362811327,
+      "synflow": 207067874.6081837
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          5,
+          3
+        ],
+        "width": 32,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k3753_w32_nobn_stride_skip",
+      "short_val_acc": 83.92592592592592,
+      "train_time_s": 52.31017994880676,
+      "params": 1696394,
+      "naswot": 1195.272582956111,
+      "grad_norm": 1.6185693806037307,
+      "snip": 4.84122153557837,
+      "synflow": 525587446.29537106
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          3,
+          5,
+          5,
+          3
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k33553_w16_bn_pool_skip",
+      "short_val_acc": 91.82716049382717,
+      "train_time_s": 52.21144127845764,
+      "params": 866474,
+      "naswot": 1351.5838731876881,
+      "grad_norm": 18.688444137573242,
+      "snip": 70.52472522854805,
+      "synflow": 2146728849.0493813
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          5,
+          5,
+          7,
+          5
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k75575_w64_bn_stride_noskip",
+      "short_val_acc": 74.74074074074075,
+      "train_time_s": 64.25423002243042,
+      "params": 6149962,
+      "naswot": 1334.8446042749101,
+      "grad_norm": 15.778720617294312,
+      "snip": 82.06354212760925,
+      "synflow": 17674078356.591644
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          7,
+          3
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k3773_w16_bn_stride_noskip",
+      "short_val_acc": 80.79012345679011,
+      "train_time_s": 50.300416231155396,
+      "params": 727194,
+      "naswot": 1163.727204503481,
+      "grad_norm": 7.713484436273575,
+      "snip": 25.786588728427887,
+      "synflow": 60287162.02288106
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          5,
+          3
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k553_w32_bn_stride_skip",
+      "short_val_acc": 84.09876543209876,
+      "train_time_s": 50.34213733673096,
+      "params": 2238538,
+      "naswot": 1252.907246146614,
+      "grad_norm": 10.856392830610275,
+      "snip": 45.15132561326027,
+      "synflow": 21753013.585829474
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          3,
+          7,
+          7,
+          5
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k73775_w16_bn_stride_noskip",
+      "short_val_acc": 74.91358024691358,
+      "train_time_s": 51.719438791275024,
+      "params": 1593882,
+      "naswot": 1170.4163685431936,
+      "grad_norm": 10.698843777179718,
+      "snip": 39.67674630880356,
+      "synflow": 1261557309.7919514
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          5,
+          5
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k555_w32_bn_stride_noskip",
+      "short_val_acc": 81.72839506172839,
+      "train_time_s": 50.51415276527405,
+      "params": 2358826,
+      "naswot": 1245.4440151363833,
+      "grad_norm": 8.75987434387207,
+      "snip": 36.076382637023926,
+      "synflow": 17523298.765901614
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          5,
+          5
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k555_w64_nobn_stride_noskip",
+      "short_val_acc": 81.01234567901234,
+      "train_time_s": 52.401243686676025,
+      "params": 5226378,
+      "naswot": 1302.0512112617616,
+      "grad_norm": 0.9954756274819374,
+      "snip": 3.700339999049902,
+      "synflow": 49148207.66200429
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          5,
+          3,
+          3,
+          5
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k35335_w64_nobn_stride_noskip",
+      "short_val_acc": 83.82716049382715,
+      "train_time_s": 50.8152334690094,
+      "params": 2995594,
+      "naswot": 1302.9417978037932,
+      "grad_norm": 0.15056085237301886,
+      "snip": 0.48488020710647106,
+      "synflow": 2808643476.750548
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          3,
+          3,
+          7,
+          3
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k33373_w16_bn_pool_noskip",
+      "short_val_acc": 85.01234567901234,
+      "train_time_s": 50.96373200416565,
+      "params": 985754,
+      "naswot": 1338.0499037511677,
+      "grad_norm": 13.178308725357056,
+      "snip": 51.371307015419006,
+      "synflow": 470447083.4580955
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          7,
+          7,
+          3,
+          7
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k77737_w64_nobn_pool_noskip",
+      "short_val_acc": 76.69135802469135,
+      "train_time_s": 197.6050307750702,
+      "params": 6083466,
+      "naswot": 1477.3077489700286,
+      "grad_norm": 0.3215558687224984,
+      "snip": 1.2088328544050455,
+      "synflow": 23025284715.780594
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          3
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k373_w32_bn_pool_skip",
+      "short_val_acc": 89.28395061728395,
+      "train_time_s": 54.221311807632446,
+      "params": 2286154,
+      "naswot": 1428.851925878535,
+      "grad_norm": 16.479194775223732,
+      "snip": 67.14596271514893,
+      "synflow": 23029788.89591725
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          5,
+          7,
+          7
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k37577_w16_bn_pool_noskip",
+      "short_val_acc": 85.25925925925925,
+      "train_time_s": 53.41395807266235,
+      "params": 2349722,
+      "naswot": 1335.2893236978773,
+      "grad_norm": 17.119502872228622,
+      "snip": 68.15943741798401,
+      "synflow": 1131794192.3868566
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          5
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k35_w64_nobn_pool_skip",
+      "short_val_acc": 81.23456790123457,
+      "train_time_s": 73.52487230300903,
+      "params": 8606730,
+      "naswot": 1427.5491951155846,
+      "grad_norm": 9.192926734685898,
+      "snip": 32.00796201080084,
+      "synflow": 2483731.867010391
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          5,
+          5,
+          3
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k7553_w64_bn_pool_skip",
+      "short_val_acc": 90.98765432098766,
+      "train_time_s": 122.77396607398987,
+      "params": 2784138,
+      "naswot": 1514.7928251304309,
+      "grad_norm": 25.206217050552368,
+      "snip": 117.23784631490707,
+      "synflow": 2647723079.8442583
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          3
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k53_w64_nobn_pool_noskip",
+      "short_val_acc": 83.35802469135803,
+      "train_time_s": 51.03575372695923,
+      "params": 8470154,
+      "naswot": 1456.7880746216456,
+      "grad_norm": 3.319272369146347,
+      "snip": 12.810626298189163,
+      "synflow": 1489073.689445336
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          7,
+          7,
+          5
+        ],
+        "width": 32,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k37775_w32_nobn_stride_noskip",
+      "short_val_acc": 79.30864197530865,
+      "train_time_s": 50.92670559883118,
+      "params": 4012362,
+      "naswot": 1223.8936388697866,
+      "grad_norm": 0.15840321267023683,
+      "snip": 0.4660991448909044,
+      "synflow": 5093958979.718877
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          5,
+          7
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k557_w32_bn_pool_skip",
+      "short_val_acc": 88.32098765432099,
+      "train_time_s": 62.30518865585327,
+      "params": 2566218,
+      "naswot": 1425.828500136927,
+      "grad_norm": 19.707734555006027,
+      "snip": 80.5803165435791,
+      "synflow": 43305235.68996525
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          3
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k33_w64_bn_stride_skip",
+      "short_val_acc": 80.14814814814815,
+      "train_time_s": 50.414551973342896,
+      "params": 8476042,
+      "naswot": 1310.9081042613516,
+      "grad_norm": 13.385174311697483,
+      "snip": 63.079139053821564,
+      "synflow": 1515379.3753250265
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          5,
+          7,
+          3
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k7573_w32_bn_pool_skip",
+      "short_val_acc": 89.70370370370371,
+      "train_time_s": 66.06793761253357,
+      "params": 1848650,
+      "naswot": 1438.1874077187122,
+      "grad_norm": 19.647029906511307,
+      "snip": 81.6909850537777,
+      "synflow": 1157706431.5429356
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          7,
+          5,
+          3,
+          3
+        ],
+        "width": 32,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k77533_w32_nobn_stride_skip",
+      "short_val_acc": 82.34567901234567,
+      "train_time_s": 50.76062989234924,
+      "params": 1569674,
+      "naswot": 1185.0812116829156,
+      "grad_norm": 0.7653898478019983,
+      "snip": 2.3336221100762486,
+      "synflow": 13049466171.580666
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          7,
+          3,
+          3
+        ],
+        "width": 16,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k5733_w16_nobn_pool_noskip",
+      "short_val_acc": 80.17283950617285,
+      "train_time_s": 51.71538734436035,
+      "params": 645802,
+      "naswot": 1298.8329214055598,
+      "grad_norm": 0.36049627140164375,
+      "snip": 0.9948773458600044,
+      "synflow": 66124069.10797546
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          7,
+          3
+        ],
+        "width": 16,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k573_w16_nobn_stride_skip",
+      "short_val_acc": 80.09876543209876,
+      "train_time_s": 50.156721353530884,
+      "params": 1098954,
+      "naswot": 1067.5371295043055,
+      "grad_norm": 1.7860616333782673,
+      "snip": 4.792999379336834,
+      "synflow": 11195719.707534261
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          5,
+          7,
+          7,
+          7
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k55777_w64_bn_stride_skip",
+      "short_val_acc": 84.91358024691358,
+      "train_time_s": 91.77676296234131,
+      "params": 8678794,
+      "naswot": 1346.4849566798157,
+      "grad_norm": 23.057254821062088,
+      "snip": 116.74183386564255,
+      "synflow": 44962837724.46035
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          5,
+          5,
+          7,
+          7
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k55577_w16_bn_pool_skip",
+      "short_val_acc": 89.20987654320987,
+      "train_time_s": 52.52930521965027,
+      "params": 2382762,
+      "naswot": 1340.0245825606135,
+      "grad_norm": 22.476379424333572,
+      "snip": 86.71684977412224,
+      "synflow": 4610637164.750689
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          7
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k77_w64_nobn_pool_skip",
+      "short_val_acc": 73.77777777777777,
+      "train_time_s": 113.18518471717834,
+      "params": 8811018,
+      "naswot": 1444.8132300908114,
+      "grad_norm": 9.742649618536234,
+      "snip": 33.68611963093281,
+      "synflow": 6078327.20183667
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          3,
+          3,
+          7,
+          5
+        ],
+        "width": 16,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k73375_w16_nobn_pool_skip",
+      "short_val_acc": 86.8395061728395,
+      "train_time_s": 51.37525653839111,
+      "params": 1555530,
+      "naswot": 1270.4666338522497,
+      "grad_norm": 1.5684630731120706,
+      "snip": 4.371745420619845,
+      "synflow": 3642844198.3555355
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          5,
+          5,
+          7
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k7557_w64_nobn_stride_noskip",
+      "short_val_acc": 80.39506172839506,
+      "train_time_s": 54.845627307891846,
+      "params": 5296778,
+      "naswot": 1303.2288341726812,
+      "grad_norm": 0.447116257622838,
+      "snip": 1.6659773886203766,
+      "synflow": 1508045668.652903
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          5,
+          3,
+          5,
+          3
+        ],
+        "width": 16,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k35353_w16_nobn_pool_skip",
+      "short_val_acc": 82.98765432098766,
+      "train_time_s": 50.81955122947693,
+      "params": 840906,
+      "naswot": 1263.4077752890094,
+      "grad_norm": 1.574238507077098,
+      "snip": 4.424739016219974,
+      "synflow": 2348068159.9711947
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          7,
+          5,
+          3
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k7753_w64_nobn_stride_noskip",
+      "short_val_acc": 82.17283950617283,
+      "train_time_s": 52.34810209274292,
+      "params": 2871946,
+      "naswot": 1305.4568762575846,
+      "grad_norm": 0.38913556933403015,
+      "snip": 1.4169843532145023,
+      "synflow": 1180903851.7375784
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          7,
+          5,
+          3,
+          7
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k57537_w16_bn_stride_skip",
+      "short_val_acc": 82.93827160493828,
+      "train_time_s": 54.380003929138184,
+      "params": 2067370,
+      "naswot": 1169.7797268610648,
+      "grad_norm": 14.636085420846939,
+      "snip": 51.20790642499924,
+      "synflow": 2574023415.3836665
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          7,
+          3
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k573_w16_bn_stride_skip",
+      "short_val_acc": 84.5679012345679,
+      "train_time_s": 53.188422441482544,
+      "params": 1099178,
+      "naswot": 1152.0374178948387,
+      "grad_norm": 10.200207367539406,
+      "snip": 32.36283603310585,
+      "synflow": 10595556.904017445
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          7
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k77_w16_bn_stride_skip",
+      "short_val_acc": 80.98765432098766,
+      "train_time_s": 50.472482442855835,
+      "params": 2128170,
+      "naswot": 1144.3420622774809,
+      "grad_norm": 9.065810933709145,
+      "snip": 35.21704936027527,
+      "synflow": 1424598.7296751463
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          7,
+          5,
+          5
+        ],
+        "width": 32,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k5755_w32_nobn_pool_skip",
+      "short_val_acc": 84.93827160493828,
+      "train_time_s": 65.55518746376038,
+      "params": 2222218,
+      "naswot": 1364.224783341686,
+      "grad_norm": 2.5435040406882763,
+      "snip": 8.226780496537685,
+      "synflow": 1247831708.5284767
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          7,
+          5,
+          3,
+          5
+        ],
+        "width": 16,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k77535_w16_nobn_stride_noskip",
+      "short_val_acc": 80.0,
+      "train_time_s": 51.931596994400024,
+      "params": 1237034,
+      "naswot": 1139.8273814745476,
+      "grad_norm": 0.10419359244406223,
+      "snip": 0.2504967339336872,
+      "synflow": 1178062892.7908876
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          7,
+          3,
+          3
+        ],
+        "width": 32,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k37733_w32_nobn_pool_noskip",
+      "short_val_acc": 82.34567901234567,
+      "train_time_s": 60.094714403152466,
+      "params": 1653066,
+      "naswot": 1393.2743991612213,
+      "grad_norm": 0.3335335301235318,
+      "snip": 1.0954216793179512,
+      "synflow": 5110529272.742862
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          3,
+          3,
+          3,
+          5
+        ],
+        "width": 16,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k33335_w16_nobn_stride_noskip",
+      "short_val_acc": 82.17283950617283,
+      "train_time_s": 52.150437355041504,
+      "params": 1181866,
+      "naswot": 1115.1531235322855,
+      "grad_norm": 0.11122597078792751,
+      "snip": 0.2641664664261043,
+      "synflow": 150145925.42590153
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          3,
+          7,
+          3
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k3373_w64_bn_pool_skip",
+      "short_val_acc": 90.61728395061729,
+      "train_time_s": 139.62583756446838,
+      "params": 3431818,
+      "naswot": 1515.376570487464,
+      "grad_norm": 24.835673302412033,
+      "snip": 118.46438890695572,
+      "synflow": 1135075280.1986551
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          7,
+          5
+        ],
+        "width": 32,
+        "use_bn": false,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k575_w32_nobn_stride_skip",
+      "short_val_acc": 84.07407407407408,
+      "train_time_s": 52.10563659667969,
+      "params": 2418314,
+      "naswot": 1186.1400410617666,
+      "grad_norm": 1.964539397507906,
+      "snip": 6.204111061990261,
+      "synflow": 43434789.83140527
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          5,
+          5,
+          5
+        ],
+        "width": 16,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k7555_w16_nobn_pool_noskip",
+      "short_val_acc": 83.55555555555556,
+      "train_time_s": 53.30484747886658,
+      "params": 798506,
+      "naswot": 1308.422091455524,
+      "grad_norm": 0.4156144801527262,
+      "snip": 1.166659701615572,
+      "synflow": 142618290.7380449
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          3,
+          5,
+          7,
+          5
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k73575_w64_bn_stride_noskip",
+      "short_val_acc": 80.81481481481482,
+      "train_time_s": 59.23614811897278,
+      "params": 6018890,
+      "naswot": 1331.538092663433,
+      "grad_norm": 15.359602510929108,
+      "snip": 81.41373407840729,
+      "synflow": 10626293980.0478
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          3,
+          3
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k733_w16_bn_stride_noskip",
+      "short_val_acc": 81.1604938271605,
+      "train_time_s": 51.61235213279724,
+      "params": 1077018,
+      "naswot": 1153.8291550488077,
+      "grad_norm": 6.171241879463196,
+      "snip": 21.78999400138855,
+      "synflow": 3419361.1243160134
+    },
+    {
+      "arch": {
+        "kernels": [
+          7,
+          7,
+          7,
+          5,
+          5
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k77755_w64_nobn_pool_skip",
+      "short_val_acc": 81.28395061728395,
+      "train_time_s": 211.12266445159912,
+      "params": 5732362,
+      "naswot": 1464.2430421356025,
+      "grad_norm": 3.0217944169417024,
+      "snip": 10.84202516824007,
+      "synflow": 125053492493.29916
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          3,
+          5,
+          5
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": true
+      },
+      "name": "k5355_w32_bn_stride_skip",
+      "short_val_acc": 84.93827160493828,
+      "train_time_s": 52.994131326675415,
+      "params": 2141258,
+      "naswot": 1264.796101428254,
+      "grad_norm": 12.692745387554169,
+      "snip": 56.07818764448166,
+      "synflow": 485337890.9981449
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          7,
+          3,
+          3
+        ],
+        "width": 16,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k5733_w16_bn_stride_noskip",
+      "short_val_acc": 82.07407407407408,
+      "train_time_s": 52.738898515701294,
+      "params": 646042,
+      "naswot": 1158.1582624596704,
+      "grad_norm": 6.9590975642204285,
+      "snip": 22.924875855445862,
+      "synflow": 48903918.95888908
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          3,
+          5,
+          7,
+          7
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "stride",
+        "skip": false
+      },
+      "name": "k53577_w64_bn_stride_noskip",
+      "short_val_acc": 83.03703703703704,
+      "train_time_s": 67.32354879379272,
+      "params": 7587146,
+      "naswot": 1338.1258112294927,
+      "grad_norm": 16.278584361076355,
+      "snip": 82.6275150179863,
+      "synflow": 7007938235.216815
+    },
+    {
+      "arch": {
+        "kernels": [
+          5,
+          5,
+          7,
+          3,
+          7
+        ],
+        "width": 64,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k55737_w64_bn_pool_skip",
+      "short_val_acc": 92.0246913580247,
+      "train_time_s": 193.54632425308228,
+      "params": 6057354,
+      "naswot": 1518.5342667122472,
+      "grad_norm": 29.52183398604393,
+      "snip": 147.80024588108063,
+      "synflow": 40710787953.28949
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          5,
+          7
+        ],
+        "width": 64,
+        "use_bn": false,
+        "downsample": "pool",
+        "skip": true
+      },
+      "name": "k357_w64_nobn_pool_skip",
+      "short_val_acc": 83.28395061728395,
+      "train_time_s": 146.6454849243164,
+      "params": 6051338,
+      "naswot": 1444.2117381851835,
+      "grad_norm": 6.758872313424945,
+      "snip": 23.610075682401657,
+      "synflow": 90337421.1880703
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          7,
+          5
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k375_w32_bn_pool_noskip",
+      "short_val_acc": 85.82716049382717,
+      "train_time_s": 55.13896918296814,
+      "params": 2406442,
+      "naswot": 1418.1429135992566,
+      "grad_norm": 15.120783567428589,
+      "snip": 61.12969386577606,
+      "synflow": 16412331.916013137
+    },
+    {
+      "arch": {
+        "kernels": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "width": 32,
+        "use_bn": true,
+        "downsample": "pool",
+        "skip": false
+      },
+      "name": "k33333_w32_bn_pool_noskip",
+      "short_val_acc": 87.65432098765432,
+      "train_time_s": 56.28773760795593,
+      "params": 1244202,
+      "naswot": 1430.411180079535,
+      "grad_norm": 12.496393918991089,
+      "snip": 55.58140456676483,
+      "synflow": 953324490.1851188
+    }
+  ],
+  "correlations": {
+    "naswot": [
+      0.43260854908810215,
+      0.3235180885696613
+    ],
+    "synflow": [
+      0.09063963638320799,
+      0.06910095095662669
+    ],
+    "snip": [
+      0.5103513824911732,
+      0.3753438017871313
+    ],
+    "grad_norm": [
+      0.5571418887419156,
+      0.4020418964749189
+    ],
+    "params": [
+      -0.1306423515917731,
+      -0.0816647602214679
+    ]
+  }
+}

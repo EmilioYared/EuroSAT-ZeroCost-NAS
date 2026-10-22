@@ -1,0 +1,14 @@
+{
+  "id": "emilioyared/aide500-nb6-1-nb201-reproduction",
+  "title": "AIDE500 NB6 1 NB201 Reproduction",
+  "code_file": "NB6_1_NASBench201_Reproduction.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["tahsintariq/nas-bench-201-info-cifar10"],
+  "competition_sources": [],
+  "kernel_sources": ["@NB6_0_NASBench201_Extract"],
+  "cell_timeout": 7200
+}

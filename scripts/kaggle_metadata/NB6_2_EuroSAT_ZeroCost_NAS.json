@@ -1,0 +1,14 @@
+{
+  "id": "emilioyared/aide500-nb6-2-eurosat-zerocost-nas",
+  "title": "AIDE500 NB6 2 EuroSAT ZeroCost NAS",
+  "code_file": "NB6_2_EuroSAT_ZeroCost_NAS.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["waseemalastal/eurosat-rgb-dataset"],
+  "competition_sources": [],
+  "kernel_sources": ["@NB0_Setup_Data", "@NB2_Architecture_Variations", "@NB3_Optimizers_LR_Schedulers", "@NB4_Data_Augmentation"],
+  "cell_timeout": 7200
+}
